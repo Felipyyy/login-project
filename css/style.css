@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body {
+    background-color: #201b2c;
+}
+
+/* nav */
+
+.nav{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 7vh;
+
+}
+.navul {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; 
+    padding: 10px;
+}
+
+.navli{
+    font-size: 18px;
+    padding: 2px 15px; /* eixo (y,x) */
+    font-weight: 800;
+    color: rgb(0, 255, 136);
+    cursor: pointer;
+}
+
+.navli:hover {
+    color: rgb(33, 150, 95);
+}
+
+
+/* login */
+
+.menu-login{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 86vh;
+    justify-content: center;  /* justify-content refere-se ao eixo x */
+    align-items: center; /* align-items refere-se ao eixo y */
+}
+
+/* .left-login */
+
+.left-login {
+    display: flex;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    font-size: 50px !important;
+    color: rgb(0, 255, 136);
+    text-shadow: black 0.2rem 0.2rem 1rem;
+}
+
+.left-login > h3 {
+    font-size: 30px !important;
+    color: rgb(0, 255, 136);
+    text-shadow: black 0.2rem 0.2rem 1rem;
+}
+
+.left-login > img {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .right-login */
+
+.right-login {
+    display: flex;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+.card-login {
+    background-color: #201b2c;
+    width: 60%;
+    padding: 30px 35px;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1.25rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.card-login > div > h1 {
+    color: rgb(0, 255, 136);
+    font-size: 35px;
+    padding-bottom: 1rem;
+    text-shadow: black 0.2rem 0.2rem 1rem;
+}
+
+.conexao {
+    text-align: center;
+}
+
+.botao-face {
+    background-color: #3578E5;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    margin-right: 5px;
+    cursor: pointer;
+    width: 30%;
+    padding: 0.3rem;
+    margin-bottom: 0.2rem;
+    box-shadow: black 0.2rem 0.2rem 0.3rem;
+}
+
+.botao-google {
+    background-color: rgb(190, 57, 24);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 2rem;
+    width: 30%;
+    padding: 0.3rem;
+    margin-bottom: 0.2rem;
+    box-shadow: black 0.2rem 0.2rem 0.3rem;
+}
+
+.botao-face:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.botao-google:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.label-control {
+    text-align: start;
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+}
+
+.textfield {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* quando usamos o flex-direction o align-items passa a ser o eixo x,
+    e o justify-content passa a ser o eixo y */
+}
+
+.textfield > input {
+    background-color: #2f2250;
+    border: none;
+    box-shadow: black 0.5rem 0.5rem 1rem;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 3%;
+    color: rgb(0, 255, 136);
+}
+
+.input::placeholder {
+   color: rgb(0, 255, 136);
+}
+
+.botao-login {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 5%;
+}
+
+.botao-login > button {
+    text-transform: uppercase;
+    font-weight: 1000;
+    padding: 5% 20%;
+    cursor: pointer;
+    color: #2f2250;
+    background-color: rgb(0, 255, 136);
+    border: none;
+    border-radius: 20px;
+    box-shadow: black 0.5rem 0.5rem 1rem;
+    margin-top: 5px;
+}
+
+.botao-login > button:hover {
+    background-color: rgb(16, 172, 99);
+}
+
+/* footer */
+
+footer {
+    width: 100vw;
+    height: 7vh;
+    color: rgb(0, 255, 136);
+    text-align: center;
+}
+
+footer i {
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: rgba(33, 150, 95);
+}
+
+@media screen and (max-width: 768px) {
+    .main-login {
+        text-align: center;
+        flex-direction: column;
+        
+    }
+}
