@@ -13,7 +13,8 @@ body {
 .nav {
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
-
+    position: fixed;
+    z-index: 10000;
 }
 
 .navul {
@@ -42,7 +43,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    padding-top: 7rem;
+    padding-top: 10rem;
     padding-bottom: 4rem;
     justify-content: center;
     /* justify-content refere-se ao eixo x */
@@ -98,9 +99,8 @@ body {
     
     .left-login > img {
         width: 12rem;
-        margin-left: auto;
-        margin-right: auto;
     }
+}
 
     @media screen and (max-width: 520px) {
         .left-login > h1 {
@@ -113,7 +113,16 @@ body {
             font-size: 15px !important;
         }
     }
-}
+
+    @media screen and (max-width: 520px) {
+        .left-login > img {
+            width: 8rem;
+        }
+
+        .left-login > h1 {
+            font-size: 30px !important;
+        }
+    }
 
 /* right-login */
 
@@ -243,14 +252,14 @@ body {
     box-shadow: black 0.5rem 0.5rem 1rem;
 }
 
-.botao-login>button:hover {
+.botao-login > button:hover {
     background-color: rgba(33, 150, 95);
 }
 
 /* media right-login */
 
 @media screen and (max-width: 1075px) {
-    .card-login>div>h1 {
+    .card-login > div > h1 {
         font-size: 1.563rem;
     }
 }
@@ -280,20 +289,42 @@ body {
 }
 
 @media screen and (max-width: 520px) {
-    .botao-face {
-        text-decoration: transparent;
-    }
-
-    .botao-google {
-        text-decoration: transparent;
+    .metodos {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        padding-bottom: 0.5rem;
     }
 }
 
+@media screen and (max-width: 355px) {
+    .card-login > div > h1 {
+        font-size: 1.0rem;
+    }
+
+    .botao-face {
+        width: 3rem;
+        font-size: 0.4rem;
+    }
+
+    .botao-google {
+        width: 3rem;
+        font-size: 0.4rem;
+    }
+
+    .metodos {
+        font-size: 8px;
+    }
+
+    .input::placeholder {
+        color: rgb(0, 255, 136);
+        font-size: 8px;
+    }
+}
 
 /* footer */
 
 footer {
- 
     text-align: center;
 }
 
